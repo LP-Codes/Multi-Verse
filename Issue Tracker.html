@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="Issue tracker.css">
+
+</head>
+
+<body onload=" oldf()">
+    <div class="container-fluid ">
+        <ul class=" row lpnav">
+            <li><a class="active font-weight-bold" href="Issue Tracker.html"> <i class="fa fa-home"
+                        aria-hidden="true"></i> Issue Tracker</a></li>
+            <li><a class=" font-weight-bold" href="index.html ">News</a></li>
+            <li><a class=" font-weight-bold" href="#contact">Contact</a></li>
+            <li><a class=" font-weight-bold" href="#about">About</a></li>
+        </ul>
+        <div class=" bg-dark text-center text-light font-weight-bolder ">
+            <h1>Issue Tracker <i class=" fa fa-exclamation-triangle text-warning" aria-hidden="true"></i></h1>
+
+        </div>
+        <div class="container-fluid " style="background-color: rgb(56, 110, 110);">
+            <label for="issuetitle"
+                class="control-label text-capitalize font-weight-bolder h5 m-2 text-light ">Title</label>
+            <input type="text" name="issue title" id="issuetitle"
+                class="form-control   border-danger  font-weight-bold">
+            <label for="description"
+                class="control-label text-capitalize font-weight-bolder h5 m-2 text-light">Description</label>
+            <input type="text" name="Description" id="description"
+                class="form-control   border-danger  font-weight-bold">
+            <label for="description"
+                class="control-label text-capitalize font-weight-bolder h5 m-2 text-light ">Severity</label>
+            <select name="severity" id="severity" class="form-control border-danger  font-weight-bolder ">
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+
+                <option>Critical</option>
+            </select>
+            <br>
+            <button id="btn" class="btn btn-primary font-weight-bolder">ADD <i class="fa fa-plus-square text-warning"
+                    aria-hidden="true"></i></button>
+            <hr>
+        </div>
+        <table class="table table-bordered text-center">
+            <thead class="bg-dark text-light">
+                <tr>
+                    <th > Title</th>
+                    <th>Description</th>
+                    <th>Severity</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tb" class="font-weight-bolder">
+
+
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="IssueTracker.js"></script>
+</body>
+
+</html>
