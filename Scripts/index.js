@@ -43,7 +43,17 @@
              $("#weather").prepend(`<h5>Current Weather at your location is :</h5>`+`<h4> <i class="fas fa-cloud-sun-rain"></i> ${data.main.temp +" <span>&#8451;</span>"}</h4>`);
         });
 
-            
+        url5 = "https://type.fit/api/quotes"; 
+        fetch(url5)
+    .then((res) => res.json())
+    .then(function (data) {
+      // get random data between 0-100
+      var x = Math.floor(Math.random() * 100 + 1);
+      console.log(data[x].author);
+      // console.log(data[0]);
+      $("#qut").prepend(`<b>Quote</b> <i class="fas fa-user-secret text-light"></i> <h6>Author - ${data[x].author}</h6>`+`<h4> ${data[x].text}</h4>`)
+      
+    });
 
     });
    
