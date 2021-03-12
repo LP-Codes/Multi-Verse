@@ -1,26 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="index.css">
-<title>Title</title>
-</head>
-<body>
-    <ul class="lpnav">
-        <li><a  href="Issue Tracker.html">Issue Tracker</a></li>
-        <li><a class="active" href="index.html">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-    </ul>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link rel="stylesheet" href="/CSS/index.css">
+    <title>homepage</title>
+</head>
+
+<body>
+    <div class="container-fluid  ">
+        <ul class=" row lpnav font-weight-bold">
+
+            <li><a class="active font-weight-bold "><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="./Elements/Issue Tracker.html "> <i class="fa fa-bug" aria-hidden="true"></i> Issue Tracker</a>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <br>
+
+        <div class="container-fluid" style="color: rgb(229, 255, 80)">
+            <div class="card-deck">
+                <div class="card bg-primary">
+                    <div class="card-body text-center" id="ip">
+                        <!-- date will be displayed -->
+
+                    </div>
+                </div>
+                <div class="card bg-warning text-dark">
+                    <div class="card-body text-center" id="geol">
+                        <!-- geolocation is available -->
+
+                    </div>
+                </div>
+                <div class="card bg-success">
+                    <div class="card-body text-center" id="weather">
+                      
+                    </div>
+                </div>
+                <div class="card bg-danger">
+                    <div class="card-body text-center">
+                        <p class="card-text">Some text inside the fourth card</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Scripts/index.js"></script>
 </body>
+
 </html>
