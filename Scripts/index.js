@@ -52,7 +52,7 @@
       var x = Math.floor(Math.random() * 100 + 1);
       console.log(data[x].author);
       // console.log(data[0]);
-      $("#qut").prepend(`<b>Quote</b> <i class="fas fa-user-secret text-light"></i> <h6>Author - ${data[x].author}</h6>`+`<h4> ${data[x].text}</h4>`)
+      $("#qut").prepend(`<b>Quote For the Day</b> <i class="fas fa-users text-dark"></i><br><h6>Author - ${data[x].author}</h6> `+`<h4> ${data[x].text}</h4>`)
       
     });
 
